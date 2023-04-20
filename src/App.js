@@ -1,11 +1,19 @@
-import './App.css';
 
-function App() {
-  return (
-      <div>
-        <h1>Começando o portfolio</h1>
-      </div>
-  );
+import React from 'react';
+import {BrowserRouter} from 'react-router-dom';
+
+import GlobalStyle from './Style/GlobalStyle';
+
+import Routes from './routes/Routes';
+
+
+const App = () => {
+  return ( 
+    <BrowserRouter>
+      <Routes/>
+      <GlobalStyle/>
+    </BrowserRouter>
+   );
 }
-
+ 
 export default App;
