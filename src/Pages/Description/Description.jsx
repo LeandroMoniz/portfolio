@@ -10,7 +10,8 @@ import { DescriptionStyle } from "./DescriptionStyle";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 // Images:
-import me from "../../assets/img/capa.jpg";
+import me from "../../assets/img/mike-capa2.png";
+import mike from "../../assets/img/leandro.png";
 import Success from "../../assets/Components/Alerts/SuccessAlert";
 
 const Description = () => {
@@ -31,6 +32,12 @@ const Description = () => {
     if (showAlert === true) setTimeout(setFalseAlert, 3000);
   }, [showAlert]);
 
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
+
+
   return (
     <DescriptionStyle id="home">
       <Success
@@ -38,7 +45,7 @@ const Description = () => {
         message="Copiado para área de transferência!"
       ></Success>
 
-      <svg className="home-blob" viewBox="0 0 200 200">
+      <svg className="home-blob" viewBox="0 0 200 200" >
         <mask id="mask0" mask-type="alpha">
           <path
             fill="#6E57E0"
@@ -53,9 +60,11 @@ const Description = () => {
           />
           <image
             className="home__blob-img"
-            x="55"
-            y="35"
-            xlinkHref={me}
+            x="30"
+            y="65"
+            xlinkHref={isHovered ? me: mike }
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             alt="Minha foto."
           />
         </g>
@@ -68,10 +77,10 @@ const Description = () => {
             <span>Leandro</span> Moniz
           </h1>
           <p>
-            Sou um <span>desenvolvedor Full-Stack</span>,
-            especializado em <span>Node.js e React</span>, capaz de criar{" "}
-            soluções inovadoras e escaláveis, desde o back-end até o front-end{" "}
-            utilizando sempre tecnicas de clean code.
+            Sou um <span>desenvolvedor Full-Stack</span>, especializado em{" "}
+            <span>Node.js e React</span>, capaz de criar soluções inovadoras e
+            escaláveis, desde o back-end até o front-end utilizando sempre
+            tecnicas de clean code.
           </p>
         </span>
 

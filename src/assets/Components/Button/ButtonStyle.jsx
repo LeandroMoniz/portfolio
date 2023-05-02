@@ -44,11 +44,4 @@ export const ButtonStyled = styled.button`
       &:hover:after{
         width: 100%;
       };
-
-      // &:active {
-    //     transition: .05s;
-        
-    //     transform: translate(-2px, 5px);
-    //     box-shadow: none;
-    // }
 `;
