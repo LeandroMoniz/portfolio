@@ -57,6 +57,17 @@ const Projects = () => {
       Image: PugMike
 
     },
+    {
+      id: 3,
+      tech: 'Bootstrap',
+      Titulo: "Pug Mike",
+      Description: 'WebSite do pug mike',
+      LinkRepositorio: 'https://github.com/LeandroMoniz/projeto_site_pug',
+      LinkSite: 'https://pug-mike.netlify.app/',
+      TechIcon: BootstrapImg,
+      Image: PugMike
+
+    },
   ]
 
   const buscaProjeto = Projetos.filter((projeto) => projeto.tech.includes(busca));

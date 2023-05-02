@@ -8,7 +8,7 @@ export const DescriptionStyle = styled.section`
     height:100vh;
     
     .home-blob {
-        width: 40vw;
+        width: 50vw;
         path {
             fill: var(--cll-primary);
         }
