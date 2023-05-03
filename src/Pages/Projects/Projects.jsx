@@ -64,7 +64,7 @@ const Projects = () => {
       tech: 'Node.js',
       Titulo: "Controle de Manutenção",
       Description: 'Programa para controle de manutenção',
-      LinkRepositorio: 'https://github.com/LeandroMoniz/projeto_site_pug',
+      LinkRepositorio: 'https://github.com/LeandroMoniz/projeto_manutencao',
       LinkSite: '',
       TechIcon: NodeImg,
       Image: Construction
