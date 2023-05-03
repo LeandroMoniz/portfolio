@@ -24,7 +24,7 @@ export const ProjectStyle = styled.section`
     }
     .busca {
         border-radius: 5px;
-        border: 1px solid #52006b;
+        border: 1px solid #520;
         width: 400px;
         padding: 10px;
         display: flex;

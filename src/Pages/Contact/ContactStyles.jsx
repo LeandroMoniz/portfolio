@@ -59,6 +59,48 @@ export const ContactStyle = styled.section`
             display: none;
         }
     }
+    .subFrase_2 {
+        color: #fff;
+        position: absolute;
+        right: 230px;
+        bottom: 180px;
+        font-size: 1.5rem;
+        @media (max-width: 1440px) {
+            right: 50px;
+        }
+        @media (max-width: 1260px) {
+            right: 200px;
+            max-width: 300px;
+        }
+        @media (max-width: 1025px) {
+            right: 110px;
+            max-width: 300px;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    .subFrase_3 {
+        color: #fff;
+        position: absolute;
+        right: 230px;
+        bottom: 160px;
+        font-size: 1.5rem;
+        @media (max-width: 1440px) {
+            right: 50px;
+        }
+        @media (max-width: 1260px) {
+            right: 200px;
+            max-width: 300px;
+        }
+        @media (max-width: 1025px) {
+            right: 110px;
+            max-width: 300px;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
     h1,
     h2 {
         color: var(--cll-primary);
