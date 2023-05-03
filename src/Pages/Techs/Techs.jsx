@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { TechStyle } from './TechsSyle';
+import { TechStyle } from "./TechsSyle";
 
 // Import Swiper React components
 //import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,73 +13,109 @@ import "swiper/css/navigation";
 // import required modules
 //import { Navigation } from "swiper";
 
-import SectionTitle from '../../assets/Components/SectionTitle/SectionTitle'
+import SectionTitle from "../../assets/Components/SectionTitle/SectionTitle";
 
-import {ImHtmlFive2, ImCss3, ImGit} from 'react-icons/im'
-import {IoLogoJavascript, IoLogoNpm} from 'react-icons/io'
-import {RiReactjsLine} from 'react-icons/ri'
-import {SiStyledcomponents, SiTailwindcss, SiAngular, SiTypescript} from 'react-icons/si'
+import { ImHtmlFive2, ImCss3, ImGit } from "react-icons/im";
+import { IoLogoJavascript, IoLogoNpm } from "react-icons/io";
+import { RiReactjsLine } from "react-icons/ri";
+import {
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiAngular,
+  SiTypescript,
+  SiNestjs,
+  SiAmazonaws,
+  SiAwslambda,
+} from "react-icons/si";
+import { FaNode, FaBootstrap } from "react-icons/fa";
 
 const Techs = (BGImage) => {
-    return ( 
-        <TechStyle id='skills' >
-            <SectionTitle subTitle={"O que eu estudo e ando me aprimorando"} Title={"Tecnologias"}/>
+  return (
+    <TechStyle id="skills">
+      <SectionTitle
+        subTitle={"O que eu estudo e ando me aprimorando"}
+        Title={"Tecnologias"}
+      />
 
-            <section>                
-                    <span>
-                        <ImHtmlFive2/>
-                        <p>HTML</p>
-                    </span>
-                
+      <section>
+        <span>
+          <FaNode />
+          <p>Node.js</p>
+        </span>
 
-                    <span>
-                        <ImCss3/>
-                        <p>CSS</p>
-                    </span>
+        <span>
+          <SiNestjs />
+          <p>Nest.js</p>
+        </span>
 
-                    <span>
-                        <IoLogoJavascript/>
-                        <p>JavaScript</p>
-                    </span>
+        <span>
+          <IoLogoJavascript />
+          <p>JavaScript</p>
+        </span>
 
-                    <span>
-                        <SiTypescript/>
-                        <p>TypeScript</p>
-                    </span>
+        <span>
+          <SiTypescript />
+          <p>TypeScript</p>
+        </span>
 
-                    <span>
-                        <RiReactjsLine/>
-                        <p>React</p>
-                    </span>
+        <span>
+          <RiReactjsLine />
+          <p>React</p>
+        </span>
 
-                    <span>
-                        <SiAngular/>
-                        <p>Angular</p>
-                    </span>
+        <span>
+          <SiAngular />
+          <p>Angular</p>
+        </span>
 
-                    <span>
-                        <SiStyledcomponents/>
-                        <p>Styled</p>
-                        <p>Components</p>
-                    </span>
+        <span>
+          <SiStyledcomponents />
+          <p>Styled</p>
+          <p>Components</p>
+        </span>
 
-                    <span>
-                        <SiTailwindcss/>
-                        <p>Tailwind</p>
-                    </span>
+        <span>
+          <SiTailwindcss />
+          <p>Tailwind</p>
+        </span>
 
-                    <span>
-                        <IoLogoNpm/>
-                        <p>NPM</p>
-                    </span>
+        <span>
+            <FaBootstrap/>
+            <p>Bootstrap</p>
+        </span>
 
-                    <span>
-                        <ImGit/>
-                        <p>Git</p>
-                    </span>
-            </section>
-        </TechStyle>
-     );
-}
- 
+        <span>
+          <IoLogoNpm />
+          <p>NPM</p>
+        </span>
+
+        <span>
+          <ImGit />
+          <p>Git</p>
+        </span>
+
+        <span>
+          <ImHtmlFive2 />
+          <p>HTML</p>
+        </span>
+
+        <span>
+          <ImCss3 />
+          <p>CSS</p>
+        </span>
+
+        <span>
+            <SiAmazonaws/>
+            <p>AWS</p>
+        </span>
+
+        <span>
+            <SiAwslambda/>
+            <p>AWSlambda</p>
+        </span>
+      </section>
+    </TechStyle>
+  );
+};
+
 export default Techs;

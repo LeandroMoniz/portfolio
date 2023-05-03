@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
         --cll-hue: 250;
         --cll-primary: hsl(var(--cll-hue), 50%, 0%);
         --cll-primary-bot: hsl(var(--cll-hue), 54%, 56%);
-        --cll-primary-alt: hsl(var(--cll-hue), 50%, 0%);
+        --cll-primary-alt: hsl(var(--cll-hue), 100%, 0%);
         --cll-primary-lighter: hsl(var(--cll-hue), 92%, 85%);
         --cll-primary-more-lighter: hsl(var(--cll-hue), 92%, 95%);
         --cll-title: hsl(var(--cll-hue), 8%, 15%);
@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         font-family: 'Poppins', sans-serif;
-        background-color: #fff;
+        // background-color: #fff;
         ::-webkit-scrollbar {
             width: 7px;
             height: 7px;

@@ -16,7 +16,7 @@ const PageFull = () => {
 
         <FullPagesStyle>
             <Header/>
-            <Description/>
+            <Description />
             <About/>
             <Projects/>
             <Techs />
