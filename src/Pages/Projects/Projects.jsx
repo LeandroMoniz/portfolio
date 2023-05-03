@@ -18,6 +18,7 @@ import SectionTitle from '../../assets/Components/SectionTitle/SectionTitle';
 // Imagens dos cards
 import PortImage from '../../assets/img/capa.jpg'
 import PugMike from '../../assets/img/Pug_Mike.png'
+import Construction from '../../assets/img/emConstrucao.png'
 
 // Components:
 import CardProjects from '../../assets/Components/CardProject/CardProject';
@@ -25,6 +26,7 @@ import CardProjects from '../../assets/Components/CardProject/CardProject';
 // SVGs
 import BootstrapImg from '../../assets/img/bootstrap.svg'
 import ReactImg from '../../assets/img/react.svg'
+import NodeImg from '../../assets/img/node.svg'
 import Button from '../../assets/Components/Button/Button';
 
 
@@ -39,7 +41,7 @@ const Projects = () => {
       id: 1,
       tech: 'React',
       Titulo: "Portfólio",
-      Description: 'Meu portfolio,',
+      Description: 'Meu portfolio.',
       LinkRepositorio: 'https://github.com/LeandroMoniz/portfolio',
       LinkSite: 'https://pug-mike.netlify.app/',
       TechIcon: ReactImg,
@@ -59,13 +61,13 @@ const Projects = () => {
     },
     {
       id: 3,
-      tech: 'Bootstrap',
-      Titulo: "Pug Mike",
-      Description: 'WebSite do pug mike',
+      tech: 'Node.js',
+      Titulo: "Controle de Manutenção",
+      Description: 'Programa para controle de manutenção',
       LinkRepositorio: 'https://github.com/LeandroMoniz/projeto_site_pug',
-      LinkSite: 'https://pug-mike.netlify.app/',
-      TechIcon: BootstrapImg,
-      Image: PugMike
+      LinkSite: '',
+      TechIcon: NodeImg,
+      Image: Construction
 
     },
   ]
@@ -87,9 +89,14 @@ const Projects = () => {
                   src={ReactImg}
                   alt="" />
                 <img
-                  onClick={() => {setBusca('Vue'); setShowBusca('')}}
+                  onClick={() => {setBusca('Bootstrap'); setShowBusca('')}}
                   className='busca_button'
                   src={BootstrapImg}
+                  alt="" />
+                  <img
+                  onClick={() => {setBusca('Node.js'); setShowBusca('')}}
+                  className='busca_button'
+                  src={NodeImg}
                   alt="" />
                 <Button onPress={() => {setBusca(''); setShowBusca('')}}>Limpar</Button>
               </span>
