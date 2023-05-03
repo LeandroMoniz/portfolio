@@ -6,7 +6,7 @@ import Button from "../../assets/Components/Button/Button";
 import SectionTitle from "../../assets/Components/SectionTitle/SectionTitle";
 
 import video from "../../assets/img/matrix.mp4";
-import mask from "../../assets/img/mask.jpg";
+import mask from "../../assets/img/mask_one.png";
 import CV from "../../assets/LEANDRO_MONIZ.pdf";
 
 const About = () => {

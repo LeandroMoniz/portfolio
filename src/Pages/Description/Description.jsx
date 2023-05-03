@@ -11,7 +11,7 @@ import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 // Images:
 import me from "../../assets/img/mike-capa2.png";
-import mike from "../../assets/img/leandro.png";
+import mike from "../../assets/img/leandro2.png";
 import Success from "../../assets/Components/Alerts/SuccessAlert";
 
 const Description = () => {
@@ -39,7 +39,7 @@ const Description = () => {
 
 
   return (
-    <DescriptionStyle id="home">
+    <DescriptionStyle id="home" >
       <Success
         showAlert={showAlert}
         message="Copiado para área de transferência!"

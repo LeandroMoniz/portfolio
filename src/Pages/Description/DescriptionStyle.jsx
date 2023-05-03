@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const DescriptionStyle = styled.section`
-    margin: 0 auto;
+    background: linear-gradient(180deg, rgba( 165, 159, 168, 1) 20%, rgba(254, 252, 255, 1) 80%);
     padding-top: 10rem;
     display: flex;
     align-items: center;
     height:100vh;
-    
+
     .home-blob {
-        width: 50vw;
+        width: 40vw;
         path {
             fill: var(--cll-primary);
         }
@@ -35,7 +35,7 @@ export const DescriptionStyle = styled.section`
                 font-weight: var(--fw-text);
             }
             span {
-                color: var(--cll-primary);
+                color: var(--cll-primary-alt);
             }
         }
         >button {

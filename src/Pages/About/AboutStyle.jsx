@@ -23,7 +23,7 @@ export const AboutStyle = styled.section`
                 position: absolute;
                 width: 80%;
                 height: 100%;
-                z-index: 2;
+                z-index: 3;
                 user-select: none;
                 mix-blend-mode: screen;
             }

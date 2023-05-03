@@ -4,10 +4,10 @@ export const ProjectStyle = styled.section`
     padding-top: var(--pt-section);
     position: relative;
     .swiper-pagination-bullet-active {
-        background-color: #6e57e0;
+        background-color: var(--cll-primary);
     }
     .cards {
-        color: #6e57e0;
+        color: var(--cll-primary);
         text-align: center;
     }
     .swiper-slide {

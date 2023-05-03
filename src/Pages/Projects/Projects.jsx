@@ -74,7 +74,7 @@ const Projects = () => {
 
     return ( 
         <ProjectStyle id='projects'>
-            <SectionTitle subTitle={"Meus trabalhos"} Title={"Projetos"}/>
+            <SectionTitle subTitle={"Meus trabalhos e Projetos"} Title={"Projetos"}/>
             
             <Button
               className="buscador"

@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const TechStyle = styled.section`
-    padding-top: var(--pt-section);
-    section{
+padding-top: var(--pt-section);
+section{
+        background-color: #BAD9D9 ;
         margin-top: 4rem;
         padding: 30px;
         display: flex;
