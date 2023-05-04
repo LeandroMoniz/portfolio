@@ -2,10 +2,6 @@
 import styled from "styled-components";
 import Link from "../Link/Link";
 
-//====================================// imagens //==================================
-//import HealthyFood from '../../img/capa.jpg'
-
-
 //====================================// Style //==================================
 const CardContainer = styled.div`
     width: 700px;
@@ -169,6 +165,10 @@ const Info = styled.div`
                 }
             }
         }
+        img {
+            height: 75%;
+            width: 75%;
+        }
     }
     @media (max-width: 375px) {
         div {
@@ -176,6 +176,10 @@ const Info = styled.div`
                 font-size: 1.7rem;
                 max-width: 150px;
             }
+        }
+        img {
+            height: 50%;
+            width: 50%;
         }
     }
     @media (max-width: 320px) {

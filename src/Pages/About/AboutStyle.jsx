@@ -41,6 +41,7 @@ export const AboutStyle = styled.section`
             p{
                 line-height: 2.5rem;
                 margin-bottom: 1rem;
+                padding-top: 2rem;
                 font-size: var(--fs-text);
                 span {
                     color: var(--cll-primary);
@@ -57,9 +58,10 @@ export const AboutStyle = styled.section`
             p {
                 font-size: var(--fs-text-mobile);
                 line-height: 2rem;
+                padding-top: 3rem;
             }
             a {
-                font-size: 1.3rem;
+                font-size: 1.8rem;
                 padding: .5rem;
                 
                 height: 3rem;
