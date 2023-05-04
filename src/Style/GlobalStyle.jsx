@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
         --ff-body: 'Poppins', sans-serif;
         --pt-section: 3rem;
         --fs-title: 2.5rem;
-        --fs-title-mobile: 1.5rem; 
+        --fs-title-mobile: 2rem; 
         --fs-text: 1.5rem;
         --fs-text-mobile: 1rem;
         
