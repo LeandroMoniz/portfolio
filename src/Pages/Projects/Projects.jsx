@@ -16,7 +16,7 @@ import { Pagination } from "swiper";
 import SectionTitle from '../../assets/Components/SectionTitle/SectionTitle';
 
 // Imagens dos cards
-import PortImage from '../../assets/img/capa.jpg'
+import PortImage from '../../assets/img/portfolio.png'
 import PugMike from '../../assets/img/Pug_Mike.png'
 import Construction from '../../assets/img/emConstrucao.png'
 
