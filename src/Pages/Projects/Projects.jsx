@@ -43,7 +43,7 @@ const Projects = () => {
       Titulo: "Portfólio",
       Description: 'Meu portfolio.',
       LinkRepositorio: 'https://github.com/LeandroMoniz/portfolio',
-      LinkSite: 'https://pug-mike.netlify.app/',
+      LinkSite: 'https://leandromoniz.netlify.app/',
       TechIcon: ReactImg,
       Image: PortImage
 
@@ -74,69 +74,69 @@ const Projects = () => {
 
   const buscaProjeto = Projetos.filter((projeto) => projeto.tech.includes(busca));
 
-    return ( 
-        <ProjectStyle id='projects'>
-            <SectionTitle subTitle={"Meus trabalhos e Projetos"} Title={"Projetos"}/>
-            
-            <Button
-              className="buscador"
-              onPress={() => setShowBusca('active')}>Buscar</Button>
-            <div className={`busca ${showBusca}`}>
-              <span>
-                <img
-                  onClick={() => {setBusca('React'); setShowBusca('')}}
-                  className='busca_button'
-                  src={ReactImg}
-                  alt="" />
-                <img
-                  onClick={() => {setBusca('Bootstrap'); setShowBusca('')}}
-                  className='busca_button'
-                  src={BootstrapImg}
-                  alt="" />
-                  <img
-                  onClick={() => {setBusca('Node.js'); setShowBusca('')}}
-                  className='busca_button'
-                  src={NodeImg}
-                  alt="" />
-                <Button onPress={() => {setBusca(''); setShowBusca('')}}>Limpar</Button>
-              </span>
-            </div>
+  return (
+    <ProjectStyle id='projects'>
+      <SectionTitle subTitle={"Meus trabalhos e Projetos"} Title={"Projetos"} />
 
-            <div className='cards'>
-              <h1>{busca ? `${busca}` : 'Todos os projetos'}</h1>
+      <Button
+        className="buscador"
+        onPress={() => setShowBusca('active')}>Buscar</Button>
+      <div className={`busca ${showBusca}`}>
+        <span>
+          <img
+            onClick={() => { setBusca('React'); setShowBusca('') }}
+            className='busca_button'
+            src={ReactImg}
+            alt="" />
+          <img
+            onClick={() => { setBusca('Bootstrap'); setShowBusca('') }}
+            className='busca_button'
+            src={BootstrapImg}
+            alt="" />
+          <img
+            onClick={() => { setBusca('Node.js'); setShowBusca('') }}
+            className='busca_button'
+            src={NodeImg}
+            alt="" />
+          <Button onPress={() => { setBusca(''); setShowBusca('') }}>Limpar</Button>
+        </span>
+      </div>
 
-                <Swiper
-                // slidesPerView={buscaProjeto.length > 1 ? 2 : 1}
-                // slidesPerView={buscaProjeto.length > 2 ? 'auto' : (buscaProjeto.length > 1 ? 2 : 1)}
-                slidesPerView={'auto'}
-                spaceBetween={0}
-                loop={true}
-                loopFillGroupWithBlank={true}
-                pagination={{clickable: true}}
-                modules={[Pagination]}
-                className="mySwiper"
-                >
-                      {
-                        buscaProjeto.map((projeto) => (
-                          <SwiperSlide key={projeto.id}>
-                            <CardProjects
-                              tech={projeto.tech}
-                              Titulo={projeto.Titulo}
-                              Description={projeto.Description}
-                              LinkRepositorio={projeto.LinkRepositorio}
-                              LinkSite={projeto.LinkSite}
-                              TechIcon={projeto.TechIcon}
-                              Image={projeto.Image}
-                            />
-                          </SwiperSlide>
-                        ))
-                      }
-                </Swiper>
+      <div className='cards'>
+        <h1>{busca ? `${busca}` : 'Todos os projetos'}</h1>
 
-            </div>
+        <Swiper
+          // slidesPerView={buscaProjeto.length > 1 ? 2 : 1}
+          // slidesPerView={buscaProjeto.length > 2 ? 'auto' : (buscaProjeto.length > 1 ? 2 : 1)}
+          slidesPerView={'auto'}
+          spaceBetween={0}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          pagination={{ clickable: true }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {
+            buscaProjeto.map((projeto) => (
+              <SwiperSlide key={projeto.id}>
+                <CardProjects
+                  tech={projeto.tech}
+                  Titulo={projeto.Titulo}
+                  Description={projeto.Description}
+                  LinkRepositorio={projeto.LinkRepositorio}
+                  LinkSite={projeto.LinkSite}
+                  TechIcon={projeto.TechIcon}
+                  Image={projeto.Image}
+                />
+              </SwiperSlide>
+            ))
+          }
+        </Swiper>
 
-        </ProjectStyle>
-     );
+      </div>
+
+    </ProjectStyle>
+  );
 }
- 
+
 export default Projects;
