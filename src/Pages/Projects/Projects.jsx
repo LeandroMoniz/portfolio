@@ -19,6 +19,7 @@ import SectionTitle from '../../assets/Components/SectionTitle/SectionTitle';
 import PortImage from '../../assets/img/portfolio.png'
 import PugMike from '../../assets/img/Pug_Mike.png'
 import Construction from '../../assets/img/emConstrucao.png'
+import Ampla from '../../assets/img/ampla.png'
 
 // Components:
 import CardProjects from '../../assets/Components/CardProject/CardProject';
@@ -68,6 +69,17 @@ const Projects = () => {
       LinkSite: '',
       TechIcon: NodeImg,
       Image: Construction
+
+    },
+    {
+      id: 4,
+      tech: 'React',
+      Titulo: "Ampla",
+      Description: 'Website de empresa Ampla ergonomia',
+      LinkRepositorio: 'https://github.com/LeandroMoniz/Ampla',
+      LinkSite: 'https://ampladeloy.netlify.app/',
+      TechIcon: ReactImg,
+      Image: Ampla
 
     },
   ]
