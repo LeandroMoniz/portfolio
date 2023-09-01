@@ -77,7 +77,7 @@ const Projects = () => {
       Titulo: "Ampla",
       Description: 'Website de empresa Ampla ergonomia',
       LinkRepositorio: 'https://github.com/LeandroMoniz/Ampla',
-      LinkSite: 'https://ampladeloy.netlify.app/',
+      LinkSite: 'https://amplaergonomia.com.br/',
       TechIcon: ReactImg,
       Image: Ampla
 

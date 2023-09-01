@@ -2,16 +2,9 @@ import React from "react";
 
 import { TechStyle } from "./TechsSyle";
 
-// Import Swiper React components
-//import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import required modules
-//import { Navigation } from "swiper";
 
 import SectionTitle from "../../assets/Components/SectionTitle/SectionTitle";
 
@@ -25,9 +18,8 @@ import {
   SiTypescript,
   SiNestjs,
   SiAmazonaws,
-  SiAwslambda,
 } from "react-icons/si";
-import { FaNode, FaBootstrap } from "react-icons/fa";
+import { FaNode, FaBootstrap, FaJava } from "react-icons/fa";
 
 const Techs = (BGImage) => {
   return (
@@ -51,6 +43,11 @@ const Techs = (BGImage) => {
         <span>
           <IoLogoJavascript />
           <p>JavaScript</p>
+        </span>
+
+        <span>
+          <FaJava />
+          <p>Java</p>
         </span>
 
         <span>
@@ -80,8 +77,8 @@ const Techs = (BGImage) => {
         </span>
 
         <span>
-            <FaBootstrap/>
-            <p>Bootstrap</p>
+          <FaBootstrap />
+          <p>Bootstrap</p>
         </span>
 
         <span>
@@ -105,14 +102,10 @@ const Techs = (BGImage) => {
         </span>
 
         <span>
-            <SiAmazonaws/>
-            <p>AWS</p>
+          <SiAmazonaws />
+          <p>AWS</p>
         </span>
 
-        <span>
-            <SiAwslambda/>
-            <p>AWSlambda</p>
-        </span>
       </section>
     </TechStyle>
   );
