@@ -31,8 +31,7 @@ export const DescriptionStyle = styled.section`
                 font-size: 5rem;
             }
             p {
-                font-size: 2rem;
-                font-weight: var(--fw-text);
+                font-size: 1.8rem;
             }
             span {
                 color: var(--cll-primary-alt);
@@ -86,8 +85,7 @@ export const DescriptionStyle = styled.section`
                     font-size: 4.5rem;
                 }
                 p {
-                    font-size: 1.8rem;
-                    font-weight: var(--fw-text);
+                    font-size: 1.5rem;
                 }
                 span {
                     color: var(--cll-primary);
@@ -111,8 +109,7 @@ export const DescriptionStyle = styled.section`
                     font-size: 6rem;
                 }
                 p {
-                    font-size: 3.5rem;
-                    font-weight: var(--fw-text);
+                    font-size: 3.2rem;
                 }
                 span {
                     color: var(--cll-primary);

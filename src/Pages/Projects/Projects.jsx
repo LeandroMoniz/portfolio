@@ -123,7 +123,7 @@ const Projects = () => {
           slidesPerView={'auto'}
           spaceBetween={0}
           loop={true}
-          loopFillGroupWithBlank={true}
+          loopfillgroupwithblank="true"
           pagination={{ clickable: true }}
           modules={[Pagination]}
           className="mySwiper"
