@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "Portfólio",
   "name": "LeandroMoniz",
   "icons": [
     {
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "mike-capa192.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "mike-capa512.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

@@ -10,7 +10,7 @@ import { DescriptionStyle } from "./DescriptionStyle";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 // Images:
-import me from "../../assets/img/mike-capa2.png";
+import me from "../../assets/img/leandro_comp.png";
 import mike from "../../assets/img/leandro2.png";
 import Success from "../../assets/Components/Alerts/SuccessAlert";
 
@@ -60,9 +60,9 @@ const Description = () => {
           />
           <image
             className="home__blob-img"
-            x="30"
-            y="65"
-            xlinkHref={isHovered ? me: mike }
+            x="32"
+            y="60"
+            xlinkHref={isHovered ? me : mike}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             alt="Minha foto."

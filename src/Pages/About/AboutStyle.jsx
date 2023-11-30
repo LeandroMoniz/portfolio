@@ -42,7 +42,7 @@ export const AboutStyle = styled.section`
                 line-height: 2.5rem;
                 margin-bottom: 1rem;
                 padding-top: 2rem;
-                font-size: var(--fs-text);
+                font-size: 1.3rem;
                 span {
                     color: var(--cll-primary);
                 }
